@@ -2,16 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <div class="container">
-      <h1>Cloud Computing Dashboard</h1>
-      <app-dashboard></app-dashboard>
-    </div>
-  `,
-  styles: [`
-    .container {
-      margin: 20px;
-    }
-  `]
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.sass']
 })
-export class AppComponent { }
+export class AppComponent {
+  title = 'nexus';
+}

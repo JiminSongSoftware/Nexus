@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Nexus'`, () => {
+  it(`should have as title 'nexus'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Nexus');
+    expect(app.title).toEqual('nexus');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Nexus app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('nexus app is running!');
   });
 });

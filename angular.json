@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Nexus": {
+    "nexus": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Nexus:build:production"
+              "browserTarget": "nexus:build:production"
             },
             "development": {
-              "browserTarget": "Nexus:build:development"
+              "browserTarget": "nexus:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Nexus:build"
+            "browserTarget": "nexus:build"
           }
         },
         "test": {
