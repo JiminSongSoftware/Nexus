@@ -5,7 +5,7 @@ A dashboard for monitoring cloud computing environments, such as AWS, Azure, or 
 ## Tech Stack
 
 This project uses the following technologies:
-
+- Pokey did this
 - Angular on the frontend
 - REST APIs on the backend
 - Sass (or Less) for CSS preprocessing
