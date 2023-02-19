@@ -3,11 +3,14 @@ package com.expo.spring.controllers;
 import com.expo.spring.models.Person;
 import com.expo.spring.services.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
-@RequestMapping("/api/auth")
+@Controller
+@RequestMapping("/auth")
 public class AuthController {
     private final RegistrationService registrationService;
 
@@ -15,15 +18,24 @@ public class AuthController {
     public AuthController(RegistrationService registrationService) {
         this.registrationService = registrationService;
     }
-
     @GetMapping("/login")
-    public HttpStatus loginPage() {
-        return HttpStatus.OK;
+    public String loginPage() {
+        return "auth/login";
     }
+
+
+    @GetMapping("/registration")
+    public String registrationPage(@ModelAttribute("person") Person person1) {
+        return "auth/registration";
+    }
+
 
     @PostMapping("/registration")
-    public HttpStatus performRegistration(@RequestBody Person person) {
+    public String performRegistration(@ModelAttribute("person") Person person) {
+
         registrationService.register(person);
-        return HttpStatus.CREATED;
+
+        return "redirect:/auth/login";
     }
+
 }
