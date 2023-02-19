@@ -8,6 +8,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { RighttopComponent } from './righttop/righttop.component';
 import { RightbottomComponent } from './rightbottom/rightbottom.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoginComponent } from './login/login.component';
+import { ShowHidePasswordDirective } from './show-hide-password.directive';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SidebarComponent,
     RighttopComponent,
     RightbottomComponent,
+    LoginComponent,
+    ShowHidePasswordDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
