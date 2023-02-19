@@ -1,33 +1,39 @@
-.sidebar 
-  width: 200px
-  height: 100%
-  background-color: #f7f7f7
-  border: 1px solid #ccc
-  position: fixed
-  top: 0
-  left: 0
-  
-  ul 
-    list-style-type: none
-    margin: 0
-    padding: 0
-  
-    li 
-      a 
-        display: block
-        padding: 10px
-        text-decoration: none
-        color: #333
-        font-size: 16px
-  
-        &:hover 
-          background-color: #eee
-    
-  .logo 
-    display: block
-    width: 100%
-    height: 100px
-    background-image: url('logo.png')
-    background-size: contain
-    background-repeat: no-repeat
-    margin-bottom: 20px
+.nav-items
+  padding-top: 40px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .nav-item
+    display: flex
+    align-items: center
+    padding: 25px 50px
+    cursor: pointer
+    box-sizing: border-box
+    // width: 100%
+
+    @media only screen and (max-width: 1300px)
+      padding: 25px 40px
+
+    &:hover:not(:first-child)
+      background-color: #DDFFF4
+      border-radius: 25px
+
+    fa-icon
+      font-size: 24px
+
+    span
+      display: inline-block
+      margin-left: 10px
+
+  .logo-item
+    display: flex
+    align-items: center
+    padding: 10px
+    font-size: 28px
+    font-weight: bold
+
+    img
+      height: 60px
+      margin-right: 10px
+      content: url("logo.png")

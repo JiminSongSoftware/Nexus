@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RighttopComponent } from './righttop/righttop.component';
 import { RightbottomComponent } from './rightbottom/rightbottom.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,10 @@ import { RightbottomComponent } from './rightbottom/rightbottom.component';
     DashboardComponent,
     SidebarComponent,
     RighttopComponent,
-    RightbottomComponent
+    RightbottomComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
