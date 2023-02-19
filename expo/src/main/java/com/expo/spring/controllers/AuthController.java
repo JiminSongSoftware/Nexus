@@ -3,13 +3,11 @@ package com.expo.spring.controllers;
 import com.expo.spring.models.Person;
 import com.expo.spring.services.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @RequestMapping("/auth")
 public class AuthController {
     private final RegistrationService registrationService;
@@ -18,24 +16,27 @@ public class AuthController {
     public AuthController(RegistrationService registrationService) {
         this.registrationService = registrationService;
     }
-    @GetMapping("/login")
-    public String loginPage() {
-        return "auth/login";
-    }
 
+    @GetMapping("/login")
+    public ResponseEntity<String> loginPage() {
+        return new ResponseEntity<>("Login page", HttpStatus.OK);
+    }
 
     @GetMapping("/registration")
-    public String registrationPage(@ModelAttribute("person") Person person1) {
-        return "auth/registration";
+    public ResponseEntity<Person> registrationPage() {
+        System.out.println("asd");
+        return new ResponseEntity<>(new Person(), HttpStatus.OK);
     }
 
 
+
+    /*
+    {"id":1992,"fullName":"Abdu","yearOfBirth":1992,"password":"korea12","role":null}
+     */
     @PostMapping("/registration")
-    public String performRegistration(@ModelAttribute("person") Person person) {
-
+    public ResponseEntity<String> performRegistration(@RequestBody Person person) {
+        System.out.println("hello");
         registrationService.register(person);
-
-        return "redirect:/auth/login";
+        return new ResponseEntity<>("Registration successful", HttpStatus.CREATED);
     }
-
 }
