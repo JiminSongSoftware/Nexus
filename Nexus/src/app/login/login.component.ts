@@ -1,9 +1,8 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, Inject, Injectable } from '@angular/core';
 import { ShowHidePasswordDirective } from '../show-hide-password.directive';
-import { environment } from 'src/environment';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
-import { HttpClient} from '@angular/common/http';
+import { HttpClient, HttpErrorResponse} from '@angular/common/http';
 
 interface LoginResponse {
   token: string;
@@ -30,6 +29,7 @@ export class LoginComponent implements AfterViewInit {
   private passwordInput!: ElementRef;
   email: any;
   password: any;
+  errorMessage: string = '';
   private _isLoggedIn = false;
       
 
@@ -47,10 +47,15 @@ export class LoginComponent implements AfterViewInit {
         const loginResponse = response as LoginResponse;
         localStorage.setItem('token', loginResponse.token);
         this.router.navigate(['/dashboard']);
-        // handle successful login response, such as storing user data in session/local storage or redirecting to a new page
+        // handle successful login response
       },
-      error: (error: any) => {
-        // handle login error response, such as displaying an error message to the user
+      error: (error: HttpErrorResponse) => {
+        // handle login error response
+        if (error.status === 401) {
+          this.errorMessage = 'Invalid email/password';
+        } else {
+          this.errorMessage = 'An error occurred.';
+        }
       }
     });
   }

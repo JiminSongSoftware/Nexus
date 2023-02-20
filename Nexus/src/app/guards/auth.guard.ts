@@ -14,10 +14,8 @@ export class AuthGuard implements CanActivate {
   canActivate(): boolean {
     console.log('AuthGuard: canActivate called');
     if (this.authService.isLoggedIn()) {
-      console.log('AuthGuard: user is logged in');
       return true;
     } else {
-      console.log('AuthGuard: user is not logged in');
       localStorage.removeItem('token'); // clear invalid token from local storage
       this.router.navigate(['/']);
       return false;

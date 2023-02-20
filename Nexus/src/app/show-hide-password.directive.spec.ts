@@ -10,7 +10,6 @@ describe('ShowHidePasswordDirective', () => {
       declarations: [ShowHidePasswordDirective]
     });
     fixture = TestBed.createComponent(ShowHidePasswordDirective);
-    directive = fixture.componentInstance;
   });
 
   it('should toggle password visibility when clicked', () => {
