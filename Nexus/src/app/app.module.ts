@@ -9,13 +9,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { environment } from 'src/environment';
 import { ShowHidePasswordDirective } from './show-hide-password.directive';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     LoginComponent,
-    ShowHidePasswordDirective
+    ShowHidePasswordDirective,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

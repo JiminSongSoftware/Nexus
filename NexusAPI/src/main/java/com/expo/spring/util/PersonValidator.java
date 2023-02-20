@@ -24,7 +24,7 @@ public class PersonValidator {
     public void validate(Object o, Errors errors) {
         Person person = (Person) o;
 
-        if (peopleService.getPersonByFullName(person.getFullName()).isPresent())
+        if (peopleService.getPersonByFullName(person.getEmail()).isPresent())
             errors.rejectValue("fullName", "", "There is a person with the same name ");
     }
 }

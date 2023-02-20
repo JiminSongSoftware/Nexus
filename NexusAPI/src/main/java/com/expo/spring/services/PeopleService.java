@@ -48,7 +48,7 @@ public class PeopleService {
     }
 
     public Optional<Person> getPersonByFullName(String fullName) {
-        return peopleRepository.findByFullName(fullName);
+        return peopleRepository.findByEmail(fullName);
     }
 
 }
