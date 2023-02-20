@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build-dev": "ng build --configuration=development",
-    "vercel-build": "npm run build:ssr"
+    "vercel-build": "npm run build:ssr",
+    "build:ssr": "ng build --prod && ng run nexus:server:production"
   },
   "private": true,
   "dependencies": {
