@@ -7,9 +7,10 @@
       <h1>Nexus</h1>
     </div>
     <div class="Loggin-container">
-      <h2 [ngClass]="{'error': errorMessage && !isRegistering}">
-        {{ isRegistering ? 'Register below' : (errorMessage || 'Login to dashboard') }}
-      </h2>      
+      <h2>
+        <span [ngClass]="{'error': errorMessage}">{{ errorMessage || 'Login to dashboard' }}</span>
+        <span *ngIf="isRegistering">Register below</span>
+      </h2>
           </div>
     <div class="form-container">
       <form (ngSubmit)="onSubmit()" #loginForm="ngForm" novalidate>

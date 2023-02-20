@@ -1,0 +1,36 @@
+
+<div class="header">
+    <div class="menu_bar d-flex  align-items-center">
+        <div class="search_bar">
+            <div class="form-group position-relative d-inline-block">
+              <input type="text"
+                class="form-control" name="search" id="search"  placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass position-absolute search_icon"></i>
+            </div>
+        </div>
+        <div class="filter mx-4">
+            <div class="dropdown px-4 w-100">
+                <button class="btn  border-0 d-flex align-items-center justify-content-between w-100" type="button" (click)="isOpen()">
+                  <span class="d-block">Filter</span>
+                  <i class="fa-solid fa-angle-down d-block"></i>
+                </button>
+                <ul class="dropdown-menu d-block p-3" *ngIf="dropdown">
+                  <li><a class="dropdown-item" href="#">Name</a></li>
+                  <li><a class="dropdown-item" href="#">Name 2</a></li>
+                  <li><a class="dropdown-item" href="#">Name 3</a></li>
+                </ul>
+              </div>
+        </div>
+        <div class="date_time">
+            <h2>15 May 2022 8:00 am</h2>
+        </div>
+        <div class="notification mx-4">
+            <i class="fa-solid fa-bell position-relative">
+                <span class="position-absolute nt-alert"></span>
+            </i>
+        </div> 
+        <div class="avater">
+            <img src="assets/avater.png" alt="">
+        </div> 
+    </div>
+</div>
