@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:display="http://www.w3.org/1999/xhtml"
+      xmlns:text-decoration="http://www.w3.org/1999/xhtml" xmlns:text-align="http://www.w3.org/1999/xhtml"
+      xmlns:color="http://www.w3.org/1999/xhtml" xmlns:padding="http://www.w3.org/1999/xhtml"
+      xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+  <style>
+    a.a:link, a.a:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a.a:hover, a.a:active {
+      background-color: red;
+    }
+
+    a.a {
+      position: relative;
+      left: 1215px;
+      border: 3px solid #73AD21;
+    }
+    h2.header{
+      position: relative;
+      left: 500px;
+    }
+
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="UTF-8">
+  <title>Index</title>
+</head>
+<body>
+
+<div class="w3-container">
+
+  <table class="w3-table-all" >
+    <thead>
+    <tr class="w3-red">
+      <th>Full Name</th>
+      <th>Year of birth</th>
+    </tr>
+    </thead>
+    <tr th:each="person : ${people}">
+      <td ><a th:href="@{/people/{id}(id=${person.getId()}) }" th:text="${person.getFullName()}">Full Name</a></td>
+      <td th:text="${ person.getYearOfBirth()}">Year of Birth</td>
+    </tr>
+
+  </table>
+
+</div>
+
+
+
+<a class="a" href="/people/new">Create new member</a>
+
+
+</body>
+</html>
