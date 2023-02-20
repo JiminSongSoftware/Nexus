@@ -1,0 +1,44 @@
+<div class="wrapper">
+  <div class="login-container">
+    <div class="logo-container">
+      <img src="https://cdn.discordapp.com/attachments/1076622791429857313/1076699467010543667/image.png" alt="Logo">
+    </div>
+    <div class="brand-container">
+      <h1>Nexus</h1>
+    </div>
+    <div class="Loggin-container">
+      <h2>
+        <span [ngClass]="{'error': errorMessage}">{{ errorMessage || 'Login to dashboard' }}</span>
+        <span *ngIf="isRegistering">Register below</span>
+      </h2>
+          </div>
+    <div class="form-container">
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm" novalidate>
+        <div class="form-group">
+          <label for="inputEmail">EMAIL</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email address" [(ngModel)]="email" name="email" required>
+        </div>
+        <div class="form-group password">
+          <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" appShowHidePassword [(ngModel)]="password" name="password" required>
+            <div class="forgot-password">
+              <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" [disabled]="!loginForm.valid">
+            {{ isRegistering ? 'Register' : 'Login' }}
+          </button>
+                  </div>
+      </form>
+      <h4 class="no-account">
+        {{ isRegistering ? 'Already have an account?' : 'Don\'t have an account?' }}
+        <a class="sign-up" href="#" (click)="isRegistering = !isRegistering">
+          {{ isRegistering ? 'Login' : 'Sign up' }}
+        </a>
+      </h4>
+          </div>    
+  </div>
+</div>
