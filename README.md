@@ -31,10 +31,11 @@ To get started with the development of this project, you will need to have the f
 
 Once you have these tools installed, you can follow these steps to set up your development environment:
 
-1. Clone this repository to your local machine
-2. Run `npm install` to install all required dependencies
-3. Run `ng serve` to start a local development server
-4. Open your browser and navigate to `http://localhost:4200` to access the dashboard
+1. Clone the repository to your local machine
+2. Navigate to the Nexus folder and run npm install to install all required dependencies
+3. Navigate to the NexusAPI folder and run mvn spring-boot:run to start the backend server
+4. Run ng serve in the Nexus folder to start a local development server for the frontend
+5. Open your browser and navigate to http://localhost:4200 to access the dashboard
 
 ## Contributing
 
