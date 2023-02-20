@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "java -jar /Users/jiminsong/Desktop/Nexus/NexusAPI/target/SpringSecurityApp-0.0.4-SNAPSHOT.jar",
+    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build-dev": "ng build --configuration=development",
-    "vercel-build": "ng build --prod && ng run Nexus:server:production",
-    "build:ssr": "ng build --prod && ng run nexus:server:production"
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
