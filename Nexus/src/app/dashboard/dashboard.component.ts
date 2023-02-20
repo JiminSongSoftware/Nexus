@@ -11,7 +11,7 @@ import { AuthService } from '../auth.service';
 
 export class DashboardComponent {
 
-  private _isLoggedIn = false
+  private _isLoggedIn = true
   constructor(private authService: AuthService) {
     this._isLoggedIn = this.authService.isLoggedIn();
   }
