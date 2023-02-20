@@ -1,0 +1,276 @@
+// Variables 
+$font-family: 'Mulish', sans-serif
+$brand-color: #007bff
+$brand-color-hover: #0069d9
+
+body
+  background-color: #fff
+  width: 780px
+  height: 842px
+  margin: auto
+  
+
+.login-container
+  width: 482px
+  height: 746px
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+  margin: auto
+  background-color: #fff
+  border: 1px solid #ccc
+  border-radius: 5px
+  box-shadow: 0 0 5px #ccc
+  position: absolute
+  
+.logo-container
+  position: relative
+  width: 65px
+  height: 65px
+  margin: 0 auto
+img
+  margin-top: 32px
+  width: 100%
+  height: 100%
+  
+.brand-container
+  text-align: center
+  font-size: 19px
+  font-weight: 700
+  line-height: 24px
+  letter-spacing: 0.4px
+  opacity: 0.7
+  font-family: $font-family
+  font-weight: bold
+  color: #A4A6B3
+  margin-top: 40px
+  margin-bottom: 40px
+
+.Loggin-container
+  text-align: center
+  font-size: 24px
+  font-weight: 700
+  line-height: 30px
+  letter-spacing: 0.3px
+  font-family: $font-family
+  color:#667085  
+  
+.login-header
+  position: absolute
+  bottom: 560px
+  left: 32px
+  right: 32px
+  text-align: center
+  font-size: 24px
+  font-family: $font-family
+  font-weight: 700
+  color: #000
+  margin-bottom: 32px
+  
+input[type="password"]:focus 
+  -webkit-text-security: none
+  text-security: none
+
+
+// Hide password by default
+input[type="password"] 
+  -webkit-text-security: disc
+  text-security: disc
+
+.login-form
+  position: absolute
+  bottom: 418px
+  left: 32px
+  right: 32px
+  font-family: $font-family
+  font-size: 14px
+  font-weight: 400
+  color: #9FA2B4
+  
+.email-container
+  position: absolute
+  top: 418px
+  left: 32px
+  width: 418px
+  font-size: 12px
+  font-family: $font-family
+  font-weight: bold
+  color: #9FA2B4
+  margin-top: 48px
+  
+label 
+  display: block
+  height: 16px
+  font-weight: 700
+  line-height: 15px
+  letter-spacing: 0.3px
+  color: #9FA2B4
+  font-size: 12px
+  font-family: $font-family
+  margin-bottom: 6px
+  padding-left: 32px
+label 
+  display: block
+  height: 16px
+  font-weight: 700
+  line-height: 15px
+  letter-spacing: 0.3px
+  color: #9FA2B4
+  font-size: 12px
+  font-family: $font-family
+  margin-bottom: 6px
+  padding-left: 32px
+
+
+.form-control::placeholder 
+  opacity: 0.4
+  letter-spacing: 0.3px
+  line-height: 20px
+  font-size: 14px
+  font-weight: 400
+  font-family: $font-family
+  color: #4B506D
+
+
+
+
+
+.form-group input[type="email"],
+.form-group input[type="password"] 
+
+  border: 1px solid #F0F1F7
+  border-radius: 8px
+  padding: 8px
+.form-group button[type="submit"]
+  width: 418px
+  height: 48px
+  background-color: #FFF5F3
+  box-shadow: 0px 4px 12px rgba(55, 81, 255, 0.24)
+  border: 1px solid #FFF5F3 
+  border-radius: 8px
+
+.form-group button[type="submit"]:hover 
+  background-color: #FF5349
+  color: white
+  cursor: pointer
+
+.form-group button[type="submit"]:active 
+  background-color: #E2E2E2
+
+
+
+  
+
+.form-control 
+  width: 418px
+  height: 48px
+  border: 1px solid #ccc
+  font-size: 16px
+
+.form-group 
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-bottom: 20px
+
+.form-group.password 
+  position: relative
+
+
+.form-group label 
+  font-size: 12px
+  margin-bottom: 6px
+  align-self: flex-start
+.form-group.password a.forgot-password 
+  position: absolute
+  top: 0
+  right: 0
+  margin-right: 32px
+  font-family: $font-family
+  font-weight: 400
+  font-size: 10px
+  line-height: 13px
+  color: #9FA2B4
+  letter-spacing: 0.1px
+  text-align: right
+  margin-bottom: 6px
+  align-self: flex-start
+  text-decoration: none
+
+.forgot-password i 
+  font-family: 'Font Awesome 5 Free'
+  font-weight: 400
+  font-size: 16px
+  line-height: 22px
+  color: #9FA2B4
+  cursor: pointer
+
+.no-account
+  position: absolute
+  margin-top: 180px
+  height: 20px
+  left: calc(50% - 158px/2 - 28px)
+  font-family: 'Mulish'
+  font-weight: 400
+  font-size: 14px
+  line-height: 20px
+  /* identical to box height, or 143% */
+  text-align: center
+  letter-spacing: 0.3px
+  /* grayscale / gray */
+  color: #9FA2B4
+
+
+
+
+.form-group a 
+  font-size: 14px
+  text-decoration: underline
+
+
+
+
+
+  
+.email-box
+  position: absolute
+  top: 24px
+  left: 0
+  width: 418px
+  height: 48px
+  border: 1px solid #ccc
+  border-radius: 5px
+  padding: 10px
+  font-size: 16px
+  
+.password-container
+  position: absolute
+  top: 534px
+  left: 32px
+  width: 418px
+  font-size: 12px
+  font-family: $font-family
+  font-weight: bold
+  color: #9FA2B4
+  margin-top: 24px
+  
+  
+  .password-box
+    position: absolute
+    top: 24px
+    left: 0
+    width: 418px
+    height: 48px
+    border: 1px solid #ccc
+    border-radius: 5px
+    padding: 10px
+    font-size: 16px
+  
+  .password-show
+    top: 32px
+
+
+
+
