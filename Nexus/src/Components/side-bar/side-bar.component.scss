@@ -37,12 +37,11 @@
             margin-bottom: 10px;
             display: flex;
             align-items: center;
-            justify-content: start;
+            justify-content: flex-start;
             width: 100%;
             transition: 0.3s all ease-in;
             border: 1px solid #F2F4F7;
             box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-            border-radius: 25px;
             font-family: 'Inter', sans-serif;
             &:hover{
                     background: #FFE8E3;
@@ -52,7 +51,7 @@
         .nav-link{
             width: 100%;
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             font-style: normal;
             font-weight: 400;

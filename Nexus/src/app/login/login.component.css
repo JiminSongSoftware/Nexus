@@ -200,7 +200,7 @@ label {
 .form-group label {
   font-size: 12px;
   margin-bottom: 6px;
-  align-self: flex-start;
+  align-self: flex-flex-start;
 }
 
 .form-group.password a.forgot-password {
@@ -216,7 +216,7 @@ label {
   letter-spacing: 0.1px;
   text-align: right;
   margin-bottom: 6px;
-  align-self: flex-start;
+  align-self: flex-flex-start;
   text-decoration: none;
 }
 

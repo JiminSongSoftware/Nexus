@@ -34,6 +34,31 @@ export class AuthService {
 
   public logout(): void {
     localStorage.removeItem('token');
-    this.router.navigate(['/']);
+    this.router.navigate(['/']); 
+  }
+  public checkToken(): void {
+    const storedToken = localStorage.getItem('token');
+    
+    if (!storedToken) {
+      this.logout();
+      return;
+    }
+  
+    const decodedStoredToken: any = jwt_decode(storedToken);
+    const currentTime = Date.now() / 1000;
+    if (decodedStoredToken.exp < currentTime) {
+      this.logout();
+      return;
+    }
+  
+    const timer = setInterval(() => {
+      const currentToken = localStorage.getItem('token');
+      if (!currentToken || currentToken !== storedToken) {
+        this.logout();
+        clearInterval(timer);
+      }
+    }, 1000);
   }
 }
+
+  

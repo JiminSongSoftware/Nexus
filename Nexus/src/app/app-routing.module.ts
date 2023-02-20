@@ -6,8 +6,15 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
-  { path: 'dashboard', component: MainComponent, canActivate: [AuthGuard] } as any,
+  { 
+    path: 'dashboard', 
+    component: MainComponent, 
+    canActivate: [AuthGuard] 
+  },
+  { 
+    path: '', 
+    component: LoginComponent, 
+  }
 ];
 
 @NgModule({
