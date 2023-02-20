@@ -8,14 +8,10 @@ interface LoginResponse {
   token: string;
 }
 
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.sass']
-  
-  
 })
 
 @Injectable({
@@ -31,15 +27,15 @@ export class LoginComponent implements AfterViewInit {
   password: any;
   errorMessage: string = '';
   private _isLoggedIn = false;
+  isRegistering = false;
       
-
   constructor(private http: HttpClient, @Inject('API_URL') private apiUrl: string, private authService: AuthService, private router: Router) {}
   
   public get isLoggedIn(): boolean {
     return this._isLoggedIn;
   }
 
-  onSubmit() {
+  onSubmit() {   
     const url = `${this.apiUrl}/auth/login`;
     const body = { email: this.email, password: this.password };
     this.http.post(url, body).subscribe({
@@ -61,7 +57,7 @@ export class LoginComponent implements AfterViewInit {
   }
   
   register() {
-    const url = `${this.apiUrl}/auth/registration`;;
+    const url = `${this.apiUrl}/auth/registration`;
     const body = { email: this.email, password: this.password };
     this.http.post(url, body).subscribe({
       next: data => {
@@ -72,8 +68,10 @@ export class LoginComponent implements AfterViewInit {
       }
     });
   }
-  
-  
+
+  toggleRegistering() {
+    this.isRegistering = true;
+  }
 
   ngAfterViewInit() {
     if (this.passwordInput) {
