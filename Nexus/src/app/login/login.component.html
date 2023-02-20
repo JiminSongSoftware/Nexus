@@ -1,4 +1,4 @@
-<div class="wrapper" *ngIf="!isLoggedIn">
+<div class="wrapper">
   <div class="login-container">
     <div class="logo-container">
       <img src="https://cdn.discordapp.com/attachments/1076622791429857313/1076699467010543667/image.png" alt="Logo">
@@ -15,7 +15,7 @@
           <label for="inputEmail">EMAIL</label>
           <input type="email" class="form-control" id="inputEmail" placeholder="Email address" [(ngModel)]="email" name="email" required>
         </div>
-        
+          
         
         <div class="form-group password">
           <label for="inputPassword" class="col-sm-2 control-label">Password</label>
