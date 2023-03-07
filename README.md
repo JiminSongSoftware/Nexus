@@ -58,3 +58,14 @@ Once you have these tools installed, you can follow these steps to set up your d
 
 1. Clone the repository to your local machine
 2. Navigate to the Nexus folder and run `npm install` to install all required dependencies
+3. Navigate to the NexusAPI folder and run `mvn spring-boot:run` to start the backend server
+4. Run `ng serve` in the Nexus folder to start a local development server for the frontend
+5. Open your browser and navigate to http://localhost:4200 to access the dashboard
+
+## Contributing
+
+This project is open-source and welcomes contributions from the community. If you are interested in contributing, please feel free to fork this repository and submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
