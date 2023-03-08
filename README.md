@@ -45,7 +45,8 @@ This project uses the following technologies:
 
 ## Design
 
-The design for this project can be found on Figma: https://www.figma.com/file/dlP4wMXdzC0pikoE5FA4fC/Nexus?node-id=0%3A1&t=ToEznYobRr1aghEN-1
+The design for this project can be found on Figma: <br>
+https://www.figma.com/file/dlP4wMXdzC0pikoE5FA4fC/Nexus?node-id=0%3A1&t=ToEznYobRr1aghEN-1
 
 ## Development
 
