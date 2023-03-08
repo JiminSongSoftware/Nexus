@@ -1,0 +1,128 @@
+<div class="dashboard_area">
+    <div class="dashboard py-5 ">
+        <div class="top_bar d-flex align-items-center justify-content-between px-4">
+            <div class="title_box">
+                <h2>Shared Folders</h2>
+            </div>
+            <div class="filter_box d-flex align-items-center ">
+                <div class="sort position-relative">
+                    <button type="button" class="btn btn-primary" (click)="openSort()"><img src="assets/sort.svg" alt="sort"> <span>Sort</span></button>
+                    <ul class="dropdown-menu d-block w-50" *ngIf="isOpenSort">
+                        <li><button type="button"class="dropdown-item"> List Style</button></li>
+                        <li>
+                            <button type="button" class="dropdown-item">Grid View</button></li>
+                      </ul>
+                </div>
+                <div class="filter_option position-relative">
+                    <button type="button" class="btn btn-primary" (click)=" openFilter()"><img src="assets/filter.svg" alt="sort"> <span>Filter</span></button>
+                    <ul class="dropdown-menu d-block w-50" *ngIf="isOpenFilter">
+                        <li class="px-2">
+                            <div class=" position-relative d-inline-block w-100 ">
+                                <input type="text" name="search" class="w-100">
+                                <i class="fa-solid fa-magnifying-glass position-absolute search_icon"></i>
+                            </div>
+                            <div class="form-check my-2">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="service" id="" value="gb" >
+                                GB
+                              </label>
+                            </div>
+                            <div class="form-check my-2">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" name="service" id="" value="Name" >
+                                  Name
+                                </label>
+                              </div>
+                        </li>
+                        
+                      </ul>
+                </div>
+            </div>
+        </div>
+        <div class="py-5">
+            <div class="shared_table ">
+                <div class="border_line pb-4">
+                    <div class="d-flex align-items-center px-4">
+                        <div class="provider">
+                            <h4 class="title">Provider</h4>
+                        </div>
+                        <div class="file_Name">
+                            <h4 class="title">File Name</h4>
+                        </div>
+                        <div class="shared_By">
+                            <h4 class="title">Shared By</h4>
+                        </div>
+                        <div class="date">
+                            <h4 class="title">Date</h4>
+                        </div>
+                        <div class="size">
+                            <h4 class="title">Size</h4>
+                        </div>
+                        <div class="option">
+                            <h4 class="title"></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="shared_table" *ngFor="let items of ShareData">
+                <div class="border_line">
+                    <div class="d-flex align-items-center  py-3 px-4">
+                        <div class="provider">
+                            <h4 class="title">
+                                <img [src]="items.provider" alt="provider">
+                            </h4>
+                        </div>
+                        <div class="file_Name">
+                            <h4 class="file_name_of">{{items.file_name}}</h4>
+                        </div>
+                        <div class="shared_By">
+                           <div class="avater">
+                            <img [src]="items.shared_by" alt="provider">
+                           </div>
+                        </div>
+                        <div class="date">
+                            <h4 class="date_name">{{items.date}}</h4>
+                            <div class="time">{{items.time}}</div>
+                        </div>
+                        <div class="size">
+                            <button type="button" [ngClass]="items.color">{{items.size}}</button>
+                        </div>
+                        <div class="option">
+                            <button type="button" class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="px-4">
+            <div class="pagination d-flex justify-content-end align-items-center w-100 pe-2">
+                <div class="row_set mx-3 position-relative">
+                    <button type="button" class="btn" (click)="OpenPage()">Rows per page: <span>7</span> <i class="fa-solid fa-caret-down ms-2"></i></button>
+                    <ul class="dropdown-menu d-block w-50 px-3 " *ngIf="isOpenPage">
+                        <li class="mb-1 ">50</li>
+                        <li class="mb-1">100</li>
+                        <li class="mb-1">150</li>
+                        <li class="mb-1">200</li>
+                      </ul>
+                </div>
+                <div class="number_of_page">
+                    <span class="start">1 -</span>
+                    
+                    <span class="end">of 7 </span>
+                     <span class="total">1240</span>
+                </div>
+                <div class="page_slide">
+                    <div class="prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
