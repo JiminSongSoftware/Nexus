@@ -12,18 +12,18 @@ export class SharedComponent {
  
   ShareData=[
     {
-      provider: 'assets/aws.svg',
-      file_name:'aws.svg',
-      shared_by:'assets/sharedBy.png',
+      provider: 'assets/onedrive.svg',
+      file_name:'onedrive.svg',
+      shared_by:'assets/avatar.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
       size:'5gb',
       color: "badge rounded-pill btn bg-danger"
     },
     {
-      provider: 'assets/gdrive.svg',
-      file_name:'gdrive.svg',
-      shared_by:'assets/sharedBy.png',
+      provider: 'assets/google-drive.svg',
+      file_name:'google-drive.svg',
+      shared_by:'assets/avatar1.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
       size:'10gb',
@@ -31,9 +31,9 @@ export class SharedComponent {
     }
     ,
     {
-      provider: 'assets/aws.svg',
-      file_name:'aws.svg',
-      shared_by:'assets/sharedBy.png',
+      provider: 'assets/onedrive.svg',
+      file_name:'onedrive.svg',
+      shared_by:'assets/avatar.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
       size:'5gb',
@@ -41,9 +41,9 @@ export class SharedComponent {
     }
     ,
     {
-      provider: 'assets/aws.svg',
-      file_name:'aws.svg',
-      shared_by:'assets/sharedBy.png',
+      provider: 'assets/dropbox.svg',
+      file_name:'dropbox.svg',
+      shared_by:'assets/avatar1.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
       size:'5gb',

@@ -20,42 +20,42 @@ export class DashboardComponent {
     },
     {
       photo:'assets/folder.svg',
-      title: 'Folder 1',
+      title: 'Folder 2',
       items: '17',
       gb:'12gb',
       color:'bg1 card'
     },
     {
       photo:'assets/folder.svg',
-      title: 'Folder 1',
+      title: 'Folder 3',
       items: '17',
       gb:'12gb',
       color:'bg2 card'
     },
     {
       photo:'assets/folder.svg',
-      title: 'Folder 1',
+      title: 'Folder 4',
       items: '17',
       gb:'12gb',
       color:'bg3 card'
     },
     {
       photo:'assets/folder.svg',
-      title: 'Folder 1',
+      title: 'Folder 5',
       items: '17',
       gb:'12gb',
       color:'bg4 card'
     },
     {
       photo:'assets/folder.svg',
-      title: 'Folder 1',
+      title: 'Folder 6',
       items: '17',
       gb:'12gb',
       color:'bg5 card'
     },
     {
       photo:'assets/folder.svg',
-      title: 'Folder 1',
+      title: 'Folder 7',
       items: '17',
       gb:'12gb',
       color:'bg1 card'
@@ -66,7 +66,7 @@ export class DashboardComponent {
     {
       file_name: 'File.jpg',
       storage:'2.4 GB',
-      server:'',
+      server:'Dropbox',
       color:'upload-item bg_item1'
     },
     {
@@ -79,14 +79,14 @@ export class DashboardComponent {
     {
       file_name: 'File.jpg',
       storage:'2.9 GB',
-      server:'Amazon AWS',
+      server:'One Drive',
       color:'upload-item bg_item3'
     },
 
     {
       file_name: 'File.jpg',
       storage:'4.4 GB',
-      server:'Microsoft Azure',
+      server:'One Drive',
       color:'upload-item bg_item4'
     },
     {
