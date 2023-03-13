@@ -17,36 +17,36 @@ export class SharedComponent {
       shared_by:'assets/avatar.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
-      size:'5gb',
+      size:'50gb',
       color: "badge rounded-pill btn bg-danger"
     },
     {
       provider: 'assets/google-drive.svg',
       file_name:'google-drive.svg',
-      shared_by:'assets/avatar1.svg',
+      shared_by:'assets/avatar2.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
-      size:'10gb',
-      color: "badge rounded-pill btn bg-primary"
+      size:'100mb',
+      color: "badge rounded-pill btn bg-warning"
     }
     ,
     {
-      provider: 'assets/onedrive.svg',
-      file_name:'onedrive.svg',
+      provider: 'assets/nas.svg',
+      file_name:'nas.svg',
       shared_by:'assets/avatar.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
-      size:'5gb',
+      size:'1gb',
       color: "badge rounded-pill bg-success btn"
     }
     ,
     {
       provider: 'assets/dropbox.svg',
       file_name:'dropbox.svg',
-      shared_by:'assets/avatar1.svg',
+      shared_by:'assets/avatar2.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
-      size:'5gb',
+      size:'50gb',
       color: "badge rounded-pill bg-danger btn"
     }
   ]

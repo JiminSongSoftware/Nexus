@@ -5,6 +5,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { SharedComponent } from './shared/shared.component';
+import { HelpComponent } from './help/help.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: '', component: DashboardComponent },
       { path: 'dashboard', component: DashboardComponent },
       { path: 'shared', component: SharedComponent },
+      { path: 'help', component: HelpComponent },
     ],
   } as any,
 ];

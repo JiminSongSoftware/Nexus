@@ -16,49 +16,49 @@ export class DashboardComponent {
       title: 'Folder 1',
       items: '17',
       gb:'12gb',
-      color:'card'
+      color:'bg1 card'
     },
     {
       photo:'assets/folder.svg',
       title: 'Folder 2',
       items: '17',
       gb:'12gb',
-      color:'bg1 card'
+      color:'bg2 card'
     },
     {
       photo:'assets/folder.svg',
       title: 'Folder 3',
       items: '17',
       gb:'12gb',
-      color:'bg2 card'
+      color:'bg3 card'
     },
     {
       photo:'assets/folder.svg',
       title: 'Folder 4',
       items: '17',
       gb:'12gb',
-      color:'bg3 card'
+      color:'bg4 card'
     },
     {
       photo:'assets/folder.svg',
       title: 'Folder 5',
       items: '17',
       gb:'12gb',
-      color:'bg4 card'
+      color:'bg5 card'
     },
     {
       photo:'assets/folder.svg',
       title: 'Folder 6',
       items: '17',
       gb:'12gb',
-      color:'bg5 card'
+      color:'bg6 card'
     },
     {
       photo:'assets/folder.svg',
       title: 'Folder 7',
       items: '17',
       gb:'12gb',
-      color:'bg1 card'
+      color:'bg7 card'
     }
   ]
 

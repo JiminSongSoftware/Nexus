@@ -1,3 +1,4 @@
+import { HelpComponent } from './help/help.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -30,6 +31,7 @@ import { SharedComponent } from './shared/shared.component';
     SidebarRightComponent,
     SideBarComponent,
     SharedComponent,
+    HelpComponent,
   ],
   imports: [
     BrowserModule,
