@@ -4,21 +4,25 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './guards/auth.guard';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
+import { SharedComponent } from './shared/shared.component';
+import { HelpComponent } from './help/help.component';
 
 const routes: Routes = [
-  { 
-    path: 'dashboard', 
-    component: MainComponent, 
-    canActivate: [AuthGuard] 
-  },
-  { 
-    path: '', 
-    component: LoginComponent, 
-  }
+  { path: 'login', component: LoginComponent },
+  {
+    path: '',
+    component: MainComponent,
+    children: [
+      { path: '', component: DashboardComponent },
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'shared', component: SharedComponent },
+      { path: 'help', component: HelpComponent },
+    ],
+  } as any,
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

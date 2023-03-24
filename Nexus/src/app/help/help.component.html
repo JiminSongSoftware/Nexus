@@ -1,0 +1,41 @@
+<div class="dashboard_area">
+    <div class="dashboard">
+      <div class="top_bar d-flex align-items-center justify-content-between px-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <br>
+              <div class="card">
+                <h4 class="card-header center text-primary">Nexus Chatbot</h4>
+                <div class="card-body">
+                  <h6 class="card-title text-success center">You are now chatting with Nexus Chatbot by ChatGPT</h6>
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                      <div class="frame-box">
+                        <div *ngFor="let item of chatConversation">
+                          <div [ngClass]="item.cssClass">
+                            <p class="card-text padding">
+                              <span class="message">{{getText(item.response)}}</span>
+                            </p>
+                            <img *ngIf="item.person === 'You'" class="user-image" src="../../assets/avatar.svg" alt="User">
+                            <img *ngIf="item.person === 'Nexus Bot'" class="nexus-logo" src="../../assets/logo.svg" alt="Nexus Bot">
+                          </div>
+                        </div>
+                        <div><img src="../../assets/ZNeT.gif" *ngIf="showSpinner" width="50px" height="50px"></div>
+                      </div>
+                      <br>
+                      <textarea row="3" cols="15" class="form-control" [(ngModel)]="promptText" placeholder="Start by asking what you are looking for"></textarea>
+                      <br>
+                      <button class="btn btn-primary push-right" (click)="checkResponse()">Send</button>
+                    </div>
+                    <div class="col-md-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
