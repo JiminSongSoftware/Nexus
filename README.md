@@ -42,7 +42,7 @@ In the future, we plan to add support for more cloud storage providers and addit
 This project uses the following technologies:
 
 - Angular on the frontend
-- REST APIs on the backend using Springboot
+- REST APIs on the backend
 - Sass (or Less) for CSS preprocessing
 
 ## Design
