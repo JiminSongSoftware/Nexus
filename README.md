@@ -1,5 +1,7 @@
 # Welcome to Nexus! 🚀🌩️👨‍💻
 
+Demo: https://www.nexus-dashboard.software/
+
 ## Inspiration
 
 We were inspired to create Nexus because we noticed a lack of user-friendly cloud storage dashboards that could effectively visualize the contents of different cloud storage providers. We wanted to create a platform that could provide real-time monitoring and support for multiple cloud storage providers while also ensuring the privacy and security of sensitive data.
