@@ -29,10 +29,6 @@ One of the main challenges we faced was integrating the APIs of different cloud 
 
 We're proud of creating a dashboard that provides a user-friendly and secure way to manage cloud storage resources across multiple providers. We're also proud of the technical achievements we made in terms of integrating multiple cloud storage providers and creating a responsive and intuitive UI.
 
-## What we learned
-
-We learned a lot about the complexities of working with cloud storage systems and the importance of robust security measures to protect sensitive data. We also gained valuable experience in integrating different APIs and working with large datasets.
-
 ## What's next for Nexus
 
 In the future, we plan to add support for more cloud storage providers and additional features to further enhance the usability and functionality of Nexus. We also plan to continue improving the security of the platform and staying up-to-date with the latest best practices in cloud storage and web application development.
