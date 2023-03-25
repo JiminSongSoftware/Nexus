@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ShowHidePasswordDirective } from './show-hide-password.directive';
-import { ChoosedriveregisterComponent } from './choosedriveregister/choosedriveregister.component';
+import { ChooseDriveRegisterComponent } from './choosedriveregister/choosedriveregister.component';
 import { GoogledriveregisterComponent } from './googledriveregister/googledriveregister.component';
 import { OnedriveregisterComponent } from './onedriveregister/onedriveregister.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -37,7 +37,7 @@ import { HelpComponent } from './help/help.component';
     LoginComponent,
     SignupComponent,
     ShowHidePasswordDirective,
-    ChoosedriveregisterComponent,
+    ChooseDriveRegisterComponent,
     GoogledriveregisterComponent,
     OnedriveregisterComponent,
     DashboardComponent,

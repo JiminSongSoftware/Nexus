@@ -35,7 +35,7 @@
       </form>
       <h4 class="no-account">
         {{ isRegistering ? 'Already have an account?' : 'Don\'t have an account?' }}
-        <a class="sign-up" href="#" (click)="isRegistering = !isRegistering">
+        <a class="sign-up" [routerLink]="['/signup']">
           {{ isRegistering ? 'Login' : 'Sign up' }}
         </a>
       </h4>

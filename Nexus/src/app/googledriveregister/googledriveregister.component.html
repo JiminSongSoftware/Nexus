@@ -1,1 +1,32 @@
-<p>googledriveregister works!</p>
+<div class="wrapper">
+  <div class="signup-container">
+    <div class="logo-container">
+      <img src="../../assets/logo.svg" alt="Logo">
+    </div>
+    <div class="brand-container">
+      <h1>Nexus</h1>
+    </div>
+    <div class="Signup-container">
+      <h4>Add Google Cloud APIs to Nexus</h4>
+    </div>
+    <div class="form-container">
+      <form (ngSubmit)="register()" #signupForm="ngForm" novalidate>
+        <div class="form-group">
+          <label for="inputClientId">CLIENT ID FOR GOOGLE CLOUD</label>
+          <input type="text" class="form-control" id="inputClientId" placeholder="Client ID" [(ngModel)]="clientId" name="clientId" required>
+        </div>
+        <div class="form-group">
+          <label for="inputApiKey">API Key FOR GOOGLE CLOUD</label>
+          <input type="text" class="form-control" id="inputApiKey" placeholder="API Key" [(ngModel)]="apiKey" name="apiKey" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" [disabled]="!signupForm.valid">Enter</button>
+        </div>
+        <h4 class="no-account">
+          Need Support?
+          <a class="sign-up" [routerLink]="['/help']">Help</a>
+        </h4>
+      </form>
+    </div>
+  </div>
+</div>

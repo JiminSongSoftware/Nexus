@@ -1,0 +1,192 @@
+.
+├── LICENSE
+├── angular.json
+├── dist
+│   └── nexus
+│       ├── 3rdpartylicenses.txt
+│       ├── assets
+│       │   ├── Dashboard.svg
+│       │   ├── animatelogo.svg
+│       │   ├── avatar.svg
+│       │   ├── avatar1.svg
+│       │   ├── avatar2.svg
+│       │   ├── avater.png
+│       │   ├── aws.svg
+│       │   ├── chart.svg
+│       │   ├── chat.svg
+│       │   ├── circle.png
+│       │   ├── dropbox.svg
+│       │   ├── ellypsis-vertical.svg
+│       │   ├── filter.svg
+│       │   ├── folder.svg
+│       │   ├── google-drive.svg
+│       │   ├── help.svg
+│       │   ├── logo.png
+│       │   ├── logo.svg
+│       │   ├── moon.svg
+│       │   ├── nas.svg
+│       │   ├── onedrive.svg
+│       │   ├── people.svg
+│       │   ├── settings.svg
+│       │   ├── sharedBy.png
+│       │   ├── sort.svg
+│       │   └── sun.svg
+│       ├── fa-brands-400.672e913fb6f186fb.woff2
+│       ├── fa-brands-400.d67d1219bc30e68d.ttf
+│       ├── fa-regular-400.073940ed482e0363.ttf
+│       ├── fa-regular-400.c7c7429f84794f4d.woff2
+│       ├── fa-solid-900.c9f6e41813989c48.ttf
+│       ├── fa-solid-900.d5d28b783e396c28.woff2
+│       ├── fa-v4compatibility.200e567a093eee3f.ttf
+│       ├── fa-v4compatibility.e993637ad6526525.woff2
+│       ├── favicon.ico
+│       ├── index.html
+│       ├── main.74ee0c6f40eb5491.js
+│       ├── owl.video.play.e3b436436832b027.png
+│       ├── polyfills.d358f6eb7d804079.js
+│       ├── runtime.a2dc4e18a98d0481.js
+│       └── styles.6fc05ed070fa907c.css
+├── package-lock.json
+├── package.json
+├── src
+│   ├── app
+│   │   ├── analytics
+│   │   │   ├── analytics.component.html
+│   │   │   ├── analytics.component.scss
+│   │   │   ├── analytics.component.spec.ts
+│   │   │   └── analytics.component.ts
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.sass
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── auth.service.spec.ts
+│   │   ├── auth.service.ts
+│   │   ├── choosedrive
+│   │   │   ├── choosedrive.component.html
+│   │   │   ├── choosedrive.component.scss
+│   │   │   ├── choosedrive.component.spec.ts
+│   │   │   └── choosedrive.component.ts
+│   │   ├── choosedriveregister
+│   │   │   ├── choosedriveregister.component.html
+│   │   │   ├── choosedriveregister.component.scss
+│   │   │   ├── choosedriveregister.component.spec.ts
+│   │   │   └── choosedriveregister.component.ts
+│   │   ├── dashboard
+│   │   │   ├── dashboard.component.html
+│   │   │   ├── dashboard.component.scss
+│   │   │   ├── dashboard.component.spec.ts
+│   │   │   └── dashboard.component.ts
+│   │   ├── googledrivepage
+│   │   │   ├── googledrivepage.component.html
+│   │   │   ├── googledrivepage.component.scss
+│   │   │   ├── googledrivepage.component.spec.ts
+│   │   │   └── googledrivepage.component.ts
+│   │   ├── googledriveregister
+│   │   │   ├── googledriveregister.component.html
+│   │   │   ├── googledriveregister.component.scss
+│   │   │   ├── googledriveregister.component.spec.ts
+│   │   │   └── googledriveregister.component.ts
+│   │   ├── guards
+│   │   │   ├── auth.guard.spec.ts
+│   │   │   └── auth.guard.ts
+│   │   ├── help
+│   │   │   ├── help.component.html
+│   │   │   ├── help.component.scss
+│   │   │   ├── help.component.spec.ts
+│   │   │   └── help.component.ts
+│   │   ├── login
+│   │   │   ├── login.component.html
+│   │   │   ├── login.component.sass
+│   │   │   ├── login.component.spec.ts
+│   │   │   └── login.component.ts
+│   │   ├── models
+│   │   │   ├── constants.ts
+│   │   │   ├── environment-configuration.ts
+│   │   │   └── gpt-response.ts
+│   │   ├── onedrivepage
+│   │   │   ├── onedrivepage.component.html
+│   │   │   ├── onedrivepage.component.scss
+│   │   │   ├── onedrivepage.component.spec.ts
+│   │   │   └── onedrivepage.component.ts
+│   │   ├── onedriveregister
+│   │   │   ├── onedriveregister.component.html
+│   │   │   ├── onedriveregister.component.scss
+│   │   │   ├── onedriveregister.component.spec.ts
+│   │   │   └── onedriveregister.component.ts
+│   │   ├── setting
+│   │   │   ├── setting.component.html
+│   │   │   ├── setting.component.scss
+│   │   │   ├── setting.component.spec.ts
+│   │   │   └── setting.component.ts
+│   │   ├── show-hide-password.directive.spec.ts
+│   │   ├── show-hide-password.directive.ts
+│   │   └── signup
+│   │       ├── signup.component.html
+│   │       ├── signup.component.scss
+│   │       ├── signup.component.spec.ts
+│   │       └── signup.component.ts
+│   ├── assets
+│   │   ├── Dashboard.svg
+│   │   ├── ZNeT.gif
+│   │   ├── animatelogo.svg
+│   │   ├── avatar.svg
+│   │   ├── avatar1.svg
+│   │   ├── avatar2.svg
+│   │   ├── avater.png
+│   │   ├── aws.svg
+│   │   ├── chart.svg
+│   │   ├── chat.svg
+│   │   ├── circle.png
+│   │   ├── dropbox.svg
+│   │   ├── ellypsis-vertical.svg
+│   │   ├── filter.svg
+│   │   ├── folder.svg
+│   │   ├── google-drive.svg
+│   │   ├── help.svg
+│   │   ├── logo.png
+│   │   ├── logo.svg
+│   │   ├── moon.svg
+│   │   ├── nas.svg
+│   │   ├── onedrive.svg
+│   │   ├── people.svg
+│   │   ├── settings.svg
+│   │   ├── sharedBy.png
+│   │   ├── sort.svg
+│   │   └── sun.svg
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── main_components
+│   │   ├── header
+│   │   │   ├── header.component.html
+│   │   │   ├── header.component.scss
+│   │   │   ├── header.component.spec.ts
+│   │   │   └── header.component.ts
+│   │   ├── left-side-bar
+│   │   │   ├── left-side-bar.component.html
+│   │   │   ├── left-side-bar.component.scss
+│   │   │   ├── left-side-bar.component.spec.ts
+│   │   │   └── left-side-bar.component.ts
+│   │   ├── main
+│   │   │   ├── main.component.html
+│   │   │   ├── main.component.scss
+│   │   │   ├── main.component.spec.ts
+│   │   │   └── main.component.ts
+│   │   └── right-sidebar
+│   │       ├── right-sidebar.component.html
+│   │       ├── right-sidebar.component.scss
+│   │       ├── right-sidebar.component.spec.ts
+│   │       └── right-sidebar.component.ts
+│   └── styles.scss
+├── statuses.json
+├── tree.txt
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json
+
+27 directories, 163 files
