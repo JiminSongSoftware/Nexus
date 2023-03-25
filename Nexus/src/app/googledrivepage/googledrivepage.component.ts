@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-shared',
-  templateUrl: './shared.component.html',
-  styleUrls: ['./shared.component.scss']
+  selector: 'app-googledrivepage',
+  templateUrl: './googledrivepage.component.html',
+  styleUrls: ['./googledrivepage.component.scss']
 })
-export class SharedComponent {
+export class GoogledrivepageComponent {
   isOpenSort=false;
   isOpenFilter=false;  
   isOpenPage=false;

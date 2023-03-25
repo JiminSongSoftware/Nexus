@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainComponent } from './main.component';
+import { LeftSideBarComponent } from './left-side-bar.component';
 
-describe('MainComponent', () => {
-  let component: MainComponent;
-  let fixture: ComponentFixture<MainComponent>;
+describe('LeftSideBarComponent', () => {
+  let component: LeftSideBarComponent;
+  let fixture: ComponentFixture<LeftSideBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MainComponent ]
+      declarations: [ LeftSideBarComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MainComponent);
+    fixture = TestBed.createComponent(LeftSideBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SharedComponent } from './shared.component';
+import { OnedrivepageComponent } from './onedrivepage.component';
 
-describe('SharedComponent', () => {
-  let component: SharedComponent;
-  let fixture: ComponentFixture<SharedComponent>;
+describe('OnedrivepageComponent', () => {
+  let component: OnedrivepageComponent;
+  let fixture: ComponentFixture<OnedrivepageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SharedComponent ]
+      declarations: [ OnedrivepageComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SharedComponent);
+    fixture = TestBed.createComponent(OnedrivepageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

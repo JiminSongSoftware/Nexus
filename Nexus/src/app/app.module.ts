@@ -1,35 +1,56 @@
-import { HelpComponent } from './help/help.component';
+//@angular
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { LoginComponent } from './login/login.component';
-import { environment } from '../environments/environment';
-import { ShowHidePasswordDirective } from './show-hide-password.directive';
-import { HeaderComponent } from 'src/Components/header/header.component';
-import { SidebarRightComponent } from 'src/Components/sidebar-right/sidebar-right.component';
-import { SideBarComponent } from 'src/Components/side-bar/side-bar.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { MainComponent } from './main/main.component';
-import { SharedComponent } from './shared/shared.component';
 
+// 3rd party libraries
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
+// routing & environment
+import { AppRoutingModule } from './app-routing.module';
+import { environment } from '../environments/environment';
+
+// components & directives
+import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ShowHidePasswordDirective } from './show-hide-password.directive';
+import { ChoosedriveregisterComponent } from './choosedriveregister/choosedriveregister.component';
+import { GoogledriveregisterComponent } from './googledriveregister/googledriveregister.component';
+import { OnedriveregisterComponent } from './onedriveregister/onedriveregister.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from 'src/main_components/header/header.component';
+import { LeftSideBarComponent } from 'src/main_components/left-side-bar/left-side-bar.component';
+import { MainComponent } from 'src/main_components/main/main.component';
+import { RightSidebarComponent } from 'src/main_components/right-sidebar/right-sidebar.component';
+import { ChoosedriveComponent } from './choosedrive/choosedrive.component';
+import { GoogledrivepageComponent } from './googledrivepage/googledrivepage.component';
+import { OnedrivepageComponent } from './onedrivepage/onedrivepage.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
+import { SettingComponent } from './setting/setting.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     LoginComponent,
+    SignupComponent,
     ShowHidePasswordDirective,
+    ChoosedriveregisterComponent,
+    GoogledriveregisterComponent,
+    OnedriveregisterComponent,
+    DashboardComponent,
     HeaderComponent,
-    SidebarRightComponent,
-    SideBarComponent,
+    LeftSideBarComponent,
     MainComponent,
-    SharedComponent,
-    HelpComponent
+    RightSidebarComponent,
+    ChoosedriveComponent,
+    GoogledrivepageComponent,
+    OnedrivepageComponent,
+    AnalyticsComponent,
+    SettingComponent,
+    HelpComponent,
   ],
   imports: [
     BrowserModule,

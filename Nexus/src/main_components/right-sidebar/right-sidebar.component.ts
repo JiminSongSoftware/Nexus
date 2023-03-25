@@ -2,11 +2,11 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 declare var Chart: any; // Add this line to access the Chart.js library
 
 @Component({
-  selector: 'app-sidebar-right',
-  templateUrl: './sidebar-right.component.html',
-  styleUrls: ['./sidebar-right.component.scss'],
+  selector: 'app-right-sidebar',
+  templateUrl: './right-sidebar.component.html',
+  styleUrls: ['./right-sidebar.component.scss'],
 })
-export class SidebarRightComponent implements OnInit, AfterViewInit {
+export class RightSidebarComponent implements OnInit, AfterViewInit {
   constructor() {}
 
   ngOnInit(): void {}

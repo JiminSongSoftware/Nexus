@@ -3,6 +3,6 @@ import { EnvironmentConfiguration } from 'src/app/models/environment-configurati
 export const environment: EnvironmentConfiguration = {
   env_name: 'dev',
   production: false,
-  apiKey: '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',
+  apiKey: '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',
   apiUrl: 'https://nexus-dashboard.software',
 };

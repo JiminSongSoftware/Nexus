@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { MainComponent } from '../main_components/main/main.component';
 import { AuthGuard } from './guards/auth.guard';
 import { LoginComponent } from './login/login.component';
-import { MainComponent } from './main/main.component';
-import { SharedComponent } from './shared/shared.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { GoogledrivepageComponent } from './googledrivepage/googledrivepage.component';
 import { HelpComponent } from './help/help.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
     path: '',
-    component: MainComponent,
+    component: DashboardComponent,
     children: [
-      { path: '', component: DashboardComponent },
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'shared', component: SharedComponent },
+      { path: '', component: MainComponent },
+      { path: 'dashboard', component: MainComponent },
+      { path: 'shared', component: GoogledrivepageComponent },
       { path: 'help', component: HelpComponent },
     ],
   } as any,
