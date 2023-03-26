@@ -4,5 +4,5 @@ export const environment: EnvironmentConfiguration = {
   env_name: 'dev',
   production: false,
   apiKey: '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',
-  apiUrl: 'https://nexus-dashboard.software',
+  apiUrl: 'http://localhost:8080',
 };

@@ -31,6 +31,8 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { SettingComponent } from './setting/setting.component';
 import { HelpComponent } from './help/help.component';
 import { ThreeViewerComponent } from './three-viewer/three-viewer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -58,6 +60,7 @@ import { ThreeViewerComponent } from './three-viewer/three-viewer.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     CarouselModule,
   ],

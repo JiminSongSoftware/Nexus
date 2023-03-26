@@ -1,1 +1,23 @@
-<p>setting works!</p>
+<div class="container">
+    <div class="user-info">
+      <div class="user-name">Name: <span>{{currentUser.name}}</span></div>
+    </div>
+    <div class="user-email">
+      <div class="email-address">Email address: <span>{{currentUser.email}}</span></div>
+    </div>
+    <div class="support-text">Need Support? <a class="sign-up" [routerLink]="['/help']">Help</a>
+    </div>
+    <div class="password-change-heading">Change Password</div>
+    <form [formGroup]="changePasswordForm" (ngSubmit)="onChangePassword()">
+      <div class="new-password-container">
+        <div class="new-password-text">New Password:</div>
+        <input class="new-password-input" type="password" formControlName="newPassword" />
+      </div>
+      <div class="confirm-password-container">
+        <div class="confirm-password-text">Confirm Password:</div>
+        <input class="confirm-password-input" type="password" formControlName="confirmPassword" />
+      </div>
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+  
