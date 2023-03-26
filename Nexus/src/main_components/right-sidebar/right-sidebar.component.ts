@@ -1,42 +1,44 @@
-import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { ThreeViewerComponent } from 'src/app/three-viewer/three-viewer.component';
+import { Chart, ChartType, registerables } from 'chart.js';
 
-declare var Chart: any; // Add this line to access the Chart.js library
+Chart.register(...registerables);
 
 @Component({
   selector: 'app-right-sidebar',
   templateUrl: './right-sidebar.component.html',
   styleUrls: ['./right-sidebar.component.scss'],
 })
-export class RightSidebarComponent implements OnInit, AfterViewInit {
-  @ViewChild(ThreeViewerComponent, { static: false }) threeViewer!: ThreeViewerComponent;
+export class RightSidebarComponent implements AfterViewInit {
+  @ViewChild('chart') chartRef!: ElementRef;
 
   constructor() {}
-
-  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
     this.createDoughnutChart();
   }
 
   createDoughnutChart() {
-    const ctx = document.getElementById('doughnutChart') as HTMLCanvasElement;
-    const doughnutChart = new Chart(ctx, {
+    const ctx = this.chartRef.nativeElement.getContext('2d');
+    const myChart = new Chart(ctx, {
       type: 'doughnut',
       data: {
-        labels: ['Google Drive', 'One Drive'],
+        labels: ['Google Drive', 'OneDrive'],
         datasets: [
           {
-            data: [15, 15],
-            backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(255, 206, 86, 0.2)'],
-            borderColor: ['rgba(75, 192, 192, 1)', 'rgba(255, 206, 86, 1)'],
-            borderWidth: 1,
+            data: [25.32, 6.64], // Update these values based on your data
+            backgroundColor: ['#FFD04B', '#28A8EA'],
           },
         ],
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom',
+          },
+        },
       },
     });
   }

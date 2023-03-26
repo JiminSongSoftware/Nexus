@@ -12,8 +12,8 @@ export class GoogledrivepageComponent {
  
   ShareData=[
     {
-      provider: 'assets/onedrive.svg',
-      file_name:'onedrive.svg',
+      provider: 'assets/google-drive.svg',
+      file_name:'file-1.svg',
       shared_by:'assets/avatar.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
@@ -22,7 +22,7 @@ export class GoogledrivepageComponent {
     },
     {
       provider: 'assets/google-drive.svg',
-      file_name:'google-drive.svg',
+      file_name:'file-2.svg',
       shared_by:'assets/avatar2.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
@@ -31,8 +31,8 @@ export class GoogledrivepageComponent {
     }
     ,
     {
-      provider: 'assets/nas.svg',
-      file_name:'nas.svg',
+      provider: 'assets/google-drive.svg',
+      file_name:'file-3.svg',
       shared_by:'assets/avatar.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
@@ -41,8 +41,18 @@ export class GoogledrivepageComponent {
     }
     ,
     {
-      provider: 'assets/dropbox.svg',
-      file_name:'dropbox.svg',
+      provider: 'assets/google-drive.svg',
+      file_name:'file-4.svg',
+      shared_by:'assets/avatar2.svg',
+      date:'May 26, 2019',
+      time: '6:30 PM',
+      size:'50gb',
+      color: "badge rounded-pill bg-danger btn"
+    }
+    ,
+    {
+      provider: 'assets/google-drive.svg',
+      file_name:'file-5.svg',
       shared_by:'assets/avatar2.svg',
       date:'May 26, 2019',
       time: '6:30 PM',
