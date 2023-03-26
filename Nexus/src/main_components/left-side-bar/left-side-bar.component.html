@@ -50,7 +50,7 @@
                 </li>
                 <li class="nav-item  mx-2">
                     <label class="switch">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" [checked]="isDarkMode" (change)="toggleDarkMode()">
                         <span class="slider round"></span>
                       </label>
                 </li>
