@@ -1,4 +1,6 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { ThreeViewerComponent } from 'src/app/three-viewer/three-viewer.component';
+
 declare var Chart: any; // Add this line to access the Chart.js library
 
 @Component({
@@ -7,6 +9,8 @@ declare var Chart: any; // Add this line to access the Chart.js library
   styleUrls: ['./right-sidebar.component.scss'],
 })
 export class RightSidebarComponent implements OnInit, AfterViewInit {
+  @ViewChild(ThreeViewerComponent, { static: false }) threeViewer!: ThreeViewerComponent;
+
   constructor() {}
 
   ngOnInit(): void {}

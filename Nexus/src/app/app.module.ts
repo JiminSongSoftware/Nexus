@@ -30,6 +30,7 @@ import { OnedrivepageComponent } from './onedrivepage/onedrivepage.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { SettingComponent } from './setting/setting.component';
 import { HelpComponent } from './help/help.component';
+import { ThreeViewerComponent } from './three-viewer/three-viewer.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { HelpComponent } from './help/help.component';
     AnalyticsComponent,
     SettingComponent,
     HelpComponent,
+    ThreeViewerComponent,
   ],
   imports: [
     BrowserModule,
