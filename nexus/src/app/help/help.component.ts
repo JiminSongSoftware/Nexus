@@ -72,7 +72,7 @@ export class HelpComponent implements OnInit {
     This project uses the following technologies:
     
     Angular on the frontend
-    REST APIs on the backend using Laravel
+    REST APIs on the backend
     Sass for CSS preprocessing
     Design
     The design for this project can be found on Figma:
@@ -87,8 +87,8 @@ export class HelpComponent implements OnInit {
       let openai = new OpenAIApi(configuration);
 
       let requestData = {
-        model: 'text-davinci-003', //'text-davinci-003',//"text-curie-001",
-        prompt: prompt, //this.generatePrompt(animal),
+        model: 'text-davinci-003',
+        prompt: prompt, 
         temperature: 0.95,
         max_tokens: 150,
         top_p: 1.0,
@@ -108,7 +108,6 @@ export class HelpComponent implements OnInit {
       this.showSpinner = false;
     } catch (error: any) {
       this.showSpinner = false;
-      // Consider adjusting the error handling logic for your use case
       if (error.response) {
         console.error(error.response.status, error.response.data);
       } else {

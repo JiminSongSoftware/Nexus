@@ -3,6 +3,7 @@ import { EnvironmentConfiguration } from 'src/app/models/environment-configurati
 export const environment: EnvironmentConfiguration = {
   env_name: 'prod',
   production: true,
-  apiKey: '${API_KEY}',
+  // apiKey: '${API_KEY}',
+  apiKey: '',
   apiUrl: 'http://localhost:8000/',
 };
