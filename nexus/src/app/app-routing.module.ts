@@ -15,8 +15,10 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { SettingComponent } from './setting/setting.component';
 import { HelpComponent } from './help/help.component';
 import { DriveapiComponent } from './driveapi/driveapi.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
+  { path: 'landing_page', component: LandingPageComponent},
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'choosedriveregister', component: ChooseDriveRegisterComponent },

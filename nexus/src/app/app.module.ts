@@ -34,6 +34,7 @@ import { HelpComponent } from './help/help.component';
 import { ThreeViewerComponent } from './three-viewer/three-viewer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DriveapiComponent } from './driveapi/driveapi.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { DriveapiComponent } from './driveapi/driveapi.component';
     HelpComponent,
     ThreeViewerComponent,
     DriveapiComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
