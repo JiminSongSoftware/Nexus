@@ -16,21 +16,19 @@ export class GoogledriveregisterComponent {
   constructor(private http: HttpClient, @Inject('API_URL') private apiUrl: string, private router: Router) {}
 
   register() {
-    // Implement your registration logic here
-    const body = {
-      clientId: this.clientId,
-      apiKey: this.apiKey
-    };
+    // const body = {
+    //   clientId: this.clientId,
+    //   apiKey: this.apiKey
+    // };
 
-    this.http.post(`${this.apiUrl}/googledrive/register`, body).subscribe(
-      (response: any) => {
-        // Registration successful, navigate to the login page
+    // this.http.post(`${this.apiUrl}/googledrive/register`, body).subscribe(
+    //   (response: any) => {
         this.router.navigate(['/login']);
-      },
-      (error: HttpErrorResponse) => {
-        // Handle error response
-        this.errorMessage = error.error.message || 'An error occurred during registration';
-      }
-    );
+    //     this.router.navigate(['/login']);
+    //   },
+    //   (error: HttpErrorResponse) => {
+    //     this.errorMessage = error.error.message || 'An error occurred during registration';
+    //   }
+    // );
   }
 }
