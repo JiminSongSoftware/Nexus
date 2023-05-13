@@ -62,7 +62,7 @@ Once you have these tools installed, you can follow these steps to set up your d
 
 ## Contributing
 
-This project is open-source and welcomes contributions from the community. If you are interested in contributing, please feel free to fork this repository and submit a pull request.
+This endeavor is open-source and embraces contributions from the community. If you have an interest in contributing, please feel at liberty to duplicate this repository and propose a pull request.
 
 ## License
 
