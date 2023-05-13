@@ -27,7 +27,7 @@ One of the main challenges we faced was integrating the APIs of different cloud 
 
 ## Accomplishments that we're proud of
 
-We're proud of creating a dashboard that provides a user-friendly and secure way to manage cloud storage resources across multiple providers. We're also proud of the technical achievements we made in terms of integrating multiple cloud storage providers and creating a responsive and intuitive UI.
+We are proud of creating a dashboard that provides a user-friendly and secure way to manage cloud storage resources across multiple providers. We're also proud of the technical achievements we made in terms of integrating multiple cloud storage providers and creating a responsive and intuitive UI.
 
 ## What's next for Nexus
 
